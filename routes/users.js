@@ -100,7 +100,7 @@ function getDateFromString(strDate) {
 }
 
 // console.log(sorted_users);
-router.get("/sort",(req,res)=>{
+router.get("/sort/DOB",(req,res)=>{
     let sorted_users=users.sort(function(a, b) {
         let d1 = getDateFromString(a.DOB);
         let d2 = getDateFromString(b.DOB);
